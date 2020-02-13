@@ -5,6 +5,9 @@ public class FizzBuzzKata {
   private static final String FIZZ = "Fizz";
   private static final String BUZZ = "Buzz";
 
+  private static final int FIZZ_NUMBER = 3;
+  private static final int BUZZ_NUMBER = 5;
+
   public String checkFizzBuzz(int number) {
     if (number == 0) {
       throw new IllegalArgumentException("number must be positive");
@@ -28,10 +31,10 @@ public class FizzBuzzKata {
   }
 
   private boolean isFizz(int number) {
-    return number % 3 == 0;
+    return number % FIZZ_NUMBER == 0;
   }
 
   private boolean isBuzz(int number) {
-    return number % 5 == 0;
+    return number % BUZZ_NUMBER == 0;
   }
 }
