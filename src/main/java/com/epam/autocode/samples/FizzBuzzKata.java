@@ -24,8 +24,13 @@ public class FizzBuzzKata {
     }
 
     if (result.isEmpty()) {
-      result += String.valueOf(number);
+      result += String.valueOf(number + 1); //made a mistake
     }
+
+//also left commented out code    
+//     if (result.isEmpty()) {
+//       result += String.valueOf(number);
+//     }
 
     return result;
   }
